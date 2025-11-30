@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties | Luxury Estates</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">Luxury<span>Estates</span></a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="properties.html" class="active">Properties</a></li>
+                <li><a href="agents.html">Agents</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="tel:+15551234567" class="btn">
+                    <i class="fas fa-phone"></i> Call Now
+                </a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Properties Hero -->
+    <section class="properties-hero">
+        <div class="container">
+            <h1>Our Properties</h1>
+            <p>Discover our curated collection of luxury apartments</p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="featured-properties">
+        <div class="container">
+            <!--Searching-->
+            <div class="filter-section">
+                <form class="filter-form">
+                    <!--Search by Location-->
+                    <div class="form-group">
+                        <label for="filter-location">Location</label>
+                        <select id="filter-location">
+                            <option value="">All Locations</option>
+                            <option value="downtown">Downtown</option>
+                            <option value="waterfront">Waterfront</option>
+                            <option value="suburbs">Suburbs</option>
+                        </select>
+                    </div>
+                    <!--Search by Type-->
+                    <div class="form-group">
+                        <label for="filter-type">Property Type</label>
+                        <select id="filter-type">
+                            <option value="">All Types</option>
+                            <option value="apartment">Apartment</option>
+                            <option value="penthouse">Penthouse</option>
+                            <option value="condo">Condo</option>
+                        </select>
+                    </div>
+                    <!--Search by the number of bedrooms-->
+                    <div class="form-group">
+                        <label for="filter-bedrooms">Bedrooms</label>
+                        <select id="filter-bedrooms">
+                            <option value="">Any</option>
+                            <option value="1">1 Bedroom</option>
+                            <option value="2">2 Bedrooms</option>
+                            <option value="3">3+ Bedrooms</option>
+                        </select>
+                    </div>
+                    <!--Search by price range-->
+                    <div class="form-group">
+                        <label for="filter-price">Price Range</label>
+                        <select id="filter-price">
+                            <option value="">Any Price</option>
+                            <option value="0-500000">$0 - $500,000</option>
+                            <option value="500000-1000000">$500,000 - $1,000,000</option>
+                            <option value="1000000-2000000">$1,000,000 - $2,000,000</option>
+                            <option value="2000000+">$2,000,000+</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="search-btn">Apply Filters</button>
+                </form>
+            </div>
+            <!--A list of Properties-->
+            <div class="properties-grid">
+                <!-- Property 1 -->
+                <div class="property-card">
+                    <!--Images P1-->
+                    <div class="property-img">
+                        <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Luxury Apartment">
+                    </div>
+                    <!--P1 Info-->
+                    <div class="property-info">
+                        <div class="property-price">$1,250,000</div>
+                        <h3>Skyline Penthouse</h3>
+                        <p class="property-address">123 Downtown Ave, Metropolitan City</p>
+                        <div class="property-features">
+                            <div class="feature">
+                                <i class="fas fa-bed"></i>
+                                <span>3 Beds</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-bath"></i>
+                                <span>2 Baths</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-ruler-combined"></i>
+                                <span>2,200 sqft</span>
+                            </div>
+                        </div>
+                        <div class="property-actions">
+                            <a href="#" class="btn">Book a Visit</a>
+                            <a href="#" class="btn btn-outline">Get a Quote</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Property 2 -->
+                <div class="property-card">
+                    <!--Image P2-->
+                    <div class="property-img">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Modern Apartment">
+                    </div>
+                    <!--P2 info-->
+                    <div class="property-info">
+                        <div class="property-price">$895,000</div>
+                        <h3>Waterfront Residence</h3>
+                        <p class="property-address">456 Harbor View, Coastal City</p>
+                        <div class="property-features">
+                            <div class="feature">
+                                <i class="fas fa-bed"></i>
+                                <span>2 Beds</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-bath"></i>
+                                <span>2.5 Baths</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-ruler-combined"></i>
+                                <span>1,800 sqft</span>
+                            </div>
+                        </div>
+                        <div class="property-actions">
+                            <a href="#" class="btn">Book a Visit</a>
+                            <a href="#" class="btn btn-outline">Get a Quote</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Property 3 -->
+                <div class="property-card">
+                    <!--Image P3-->
+                    <div class="property-img">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2053&q=80" alt="Luxury Condo">
+                    </div>
+                    <!--P3 Info-->
+                    <div class="property-info">
+                        <div class="property-price">$1,550,000</div>
+                        <h3>Urban Oasis Loft</h3>
+                        <p class="property-address">789 Central Park, Metro City</p>
+                        <div class="property-features">
+                            <div class="feature">
+                                <i class="fas fa-bed"></i>
+                                <span>4 Beds</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-bath"></i>
+                                <span>3 Baths</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-ruler-combined"></i>
+                                <span>2,800 sqft</span>
+                            </div>
+                        </div>
+                        <div class="property-actions">
+                            <a href="#" class="btn">Book a Visit</a>
+                            <a href="#" class="btn btn-outline">Get a Quote</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 4 -->
+                <div class="property-card">
+                    <!--Image P4-->
+                    <div class="property-img">
+                        <img src="https://q-xx.bstatic.com/xdata/images/hotel/max1024x768/685537887.jpg?k=019253b3ee64bf443e5eef16b7c98b8bdb6a65c9213b9c1fffed5d53b7276952&o=&s=1024x" alt="Modern Apartment">
+                    </div>
+                    <!--P4 Info-->
+                    <div class="property-info">
+                        <div class="property-price">$750,000</div>
+                        <h3>City View Apartment</h3>
+                        <p class="property-address">321 Urban Street, Metro City</p>
+                        <div class="property-features">
+                            <div class="feature">
+                                <i class="fas fa-bed"></i>
+                                <span>2 Beds</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-bath"></i>
+                                <span>2 Baths</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-ruler-combined"></i>
+                                <span>1,500 sqft</span>
+                            </div>
+                        </div>
+                        <div class="property-actions">
+                            <a href="#" class="btn">Book a Visit</a>
+                            <a href="#" class="btn btn-outline">Get a Quote</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 5 -->
+                <div class="property-card">
+                    <!--Image P5-->
+                    <div class="property-img">
+                        <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Luxury Condo">
+                    </div>
+                    <!--P5 info-->
+                    <div class="property-info">
+                        <div class="property-price">$2,100,000</div>
+                        <h3>Executive Penthouse</h3>
+                        <p class="property-address">555 Skyline Drive, Downtown</p>
+                        <div class="property-features">
+                            <div class="feature">
+                                <i class="fas fa-bed"></i>
+                                <span>3 Beds</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-bath"></i>
+                                <span>3.5 Baths</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-ruler-combined"></i>
+                                <span>3,200 sqft</span>
+                            </div>
+                        </div>
+                        <div class="property-actions">
+                            <a href="#" class="btn">Book a Visit</a>
+                            <a href="#" class="btn btn-outline">Get a Quote</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 6 -->
+                <div class="property-card">
+                    <!--Image P6-->
+                    <div class="property-img">
+                        <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Luxury Apartment">
+                    </div>
+                    <!--P6 Info-->
+                    <div class="property-info">
+                        <div class="property-price">$1,850,000</div>
+                        <h3>Riverside Residence</h3>
+                        <p class="property-address">789 River Road, Waterside</p>
+                        <div class="property-features">
+                            <div class="feature">
+                                <i class="fas fa-bed"></i>
+                                <span>4 Beds</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-bath"></i>
+                                <span>3 Baths</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-ruler-combined"></i>
+                                <span>2,900 sqft</span>
+                            </div>
+                        </div>
+                        <div class="property-actions">
+                            <a href="#" class="btn">Book a Visit</a>
+                            <a href="#" class="btn btn-outline">Get a Quote</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div style="text-align: center; margin-top: 3rem;">
+                <div class="pagination">
+                    <a href="#" class="btn btn-outline">Previous</a>
+                    <a href="#" class="btn">1</a>
+                    <a href="#" class="btn btn-outline">2</a>
+                    <a href="#" class="btn btn-outline">3</a>
+                    <a href="#" class="btn btn-outline">Next</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Luxury Estates</h3>
+                    <p>Your premier partner for luxury apartment sales in prime metropolitan locations.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="properties.html"><i class="fas fa-chevron-right"></i> Properties</a></li>
+                        <li><a href="agents.html"><i class="fas fa-chevron-right"></i> Our Agents</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Luxury Avenue, Metropolitan City</li>
+                        <li><i class="fas fa-phone"></i> (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@luxuryestates.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 9am-6pm</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for the latest property listings and market insights.</p>
+                    <form class="newsletter-form">
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Luxury Estates.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
